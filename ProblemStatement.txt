@@ -1,26 +1,22 @@
-Reverse a Linked List
-Next question will test how comfortable you are with Linked Lists. The problem statement is simple "Reverse a linked list".
+Add One to the Number
+You are given a linked list representing a number such that each individual node acts as a digit of the number. The list HEAD->1->2->3->NULL
+corresponds to the number 123. Your task is to add 1 to this number.
 
 Input Format
-The first line contains an integer T, number of test cases. Then follows 
-T test cases. Each test case consists of two lines. The first line contains 
-N, size of the list. The second line contains 
-N space-separated integers denoting elements of the list.
+The first line contains an integer 
+T, number of test cases. Then follows 
+T test cases. Each test case consists of a number.
 
 Output Format
 The output contains 
-T
- lines, each line containing the modified list.
+T lines, each line containing the modified number after adding one.
 
 Example
 Input
 2
-4
-1 2 3 4
-5
-10 20 30 40 50
+123
+9999
 
 Output
-4 3 2 1
-50 40 30 20 10
-
+124
+10000
