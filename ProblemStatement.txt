@@ -1,22 +1,25 @@
-Add One to the Number
-You are given a linked list representing a number such that each individual node acts as a digit of the number. The list HEAD->1->2->3->NULL
-corresponds to the number 123. Your task is to add 1 to this number.
+Rotate Doubly List
+After solving quite a few problem of singly linked list, you must be quite confident with it. Lets proceed ahead to solve a question from Doubly Linked List.
+
+The question is simple but I am not sure of simplicity of the solution though. 
+
+You are given a doubly linked list of size N and an integer K, your task is to rotate the doubly linked list anti-clock wise by K positions.
 
 Input Format
-The first line contains an integer 
-T, number of test cases. Then follows 
-T test cases. Each test case consists of a number.
+The first line contains an integer T, number of test cases. Then follows T test cases. Each test case consists of two lines. The first line contains 
+K and N. The second line contains N space-separated positive integers denoting elements of the list.
 
 Output Format
-The output contains 
-T lines, each line containing the modified number after adding one.
+The output contains T lines, each line containing the modified list.
 
 Example
 Input
 2
-123
-9999
+7  3
+9 8 7 6 5 4 3
+4 3
+10 20 30 40
 
 Output
-124
-10000
+6 5 4 3 9 8 7
+40 10 20 30
