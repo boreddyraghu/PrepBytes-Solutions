@@ -1,17 +1,11 @@
-Insert a Node
-
-Inserting an element in between the elements in an array requires you to shift the elements to the left but in Linked list it is just about modifying few links. Let's practice inserting a node in an array, but there is a rule : 
-
-You are given a sorted linked list and you have to insert a node in the list in a sorted manner. 
-
-For example - if the given list is HEAD->2->3->6->8->NULL  and you have to insert 4, you will insert it after 3 and your modified list will look something like this HEAD->2->3->4->6->8->NULL
+Reverse a Linked List
+Next question will test how comfortable you are with Linked Lists. The problem statement is simple "Reverse a linked list".
 
 Input Format
-The first line contains an integer 
-T, number of test cases. Then follows 
-T test cases. Each test case consists of three lines. The first line contains 
+The first line contains an integer T, number of test cases. Then follows 
+T test cases. Each test case consists of two lines. The first line contains 
 N, size of the list. The second line contains 
-N space-separated positive integers denoting elements of the list. The third line contains an integer denoting the data value to be inserted.
+N space-separated integers denoting elements of the list.
 
 Output Format
 The output contains 
@@ -22,12 +16,11 @@ Example
 Input
 2
 4
-1 2 4 5
-3
-3
-1 1 1
-2
+1 2 3 4
+5
+10 20 30 40 50
 
 Output
-1 2 3 4 5
-1 1 1 2
+4 3 2 1
+50 40 30 20 10
+
