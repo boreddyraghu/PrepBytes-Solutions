@@ -1,25 +1,26 @@
-Even and Odd List
-You are given a linked list consisting of even and odd elements. Your task is to bring even elements to the end of the list but there is a twist here. You have to bring even elements to the end of the list in a reverse order. 
-
-If given list is 
-HEAD->1->5->2->7->6->4->NULL then after rearranging the list output should be HEAD->1->5->7->4->6->2->NULL.
+Last to Front
+Many Linked List problems are about manipulating links between the nodes, better you understand the links easier it becomes for you to solve Linked List problems. Keeping that in mind, you are given a linked list containing N elements, your task is to bring the last node to the front. If your list looks something like this HEAD->1->2->3->4->NULL you have to transform it to HEAD->4->3->2->1->NULL
 
 Input Format
-The first line contains an integer T number of test cases. Then follows T test cases. Each test case consists of two lines. The first line contains 
-N, size of linked list. The second line contains Nspace-separated positive integers denoting elements of the list.
+The first line contains an integer 
+T, no of test cases. Then follows 
+T test cases. Each test case consists of two lines. The first line contains 
+N, size of the list. The second line contains 
+N space-separated positive integers denoting elements of the list
 
 Output Format
 The output contains 
-T lines, each line containing the modified list.
+T
+ lines, each line containing the modified list.
 
 Example
 Input
 2
-6
-4 8 3 2 1 9
-5
-10 11 15 12 16
+4
+3 4 5 6
+2
+1 2
 
 Output
-3 1 9 2 8 4
-11 15 16 12 10
+6 3 4 5
+2 1
