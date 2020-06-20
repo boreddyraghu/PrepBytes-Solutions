@@ -1,13 +1,9 @@
-Rotate Doubly List
-After solving quite a few problem of singly linked list, you must be quite confident with it. Lets proceed ahead to solve a question from Doubly Linked List.
-
-The question is simple but I am not sure of simplicity of the solution though. 
-
-You are given a doubly linked list of size N and an integer K, your task is to rotate the doubly linked list anti-clock wise by K positions.
+Vowel and Consonants
+You are given a linked list consisting of vowels and consonants. The vowels and consonants are arranged in random order. You have to rearrange the array such that all the vowel's node come before the consonants and make sure that their order of appearance should match with that of original list.
 
 Input Format
 The first line contains an integer T, number of test cases. Then follows T test cases. Each test case consists of two lines. The first line contains 
-K and N. The second line contains N space-separated positive integers denoting elements of the list.
+N, size of the list. The second line contains N space-separated positive integers denoting elements of the list.
 
 Output Format
 The output contains T lines, each line containing the modified list.
@@ -15,11 +11,11 @@ The output contains T lines, each line containing the modified list.
 Example
 Input
 2
-7  3
-9 8 7 6 5 4 3
-4 3
-10 20 30 40
+4
+m o d i
+7
+a z e y i o w
 
 Output
-6 5 4 3 9 8 7
-40 10 20 30
+o i m d
+a e i o z y w
