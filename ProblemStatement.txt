@@ -1,26 +1,26 @@
-Last to Front
-Many Linked List problems are about manipulating links between the nodes, better you understand the links easier it becomes for you to solve Linked List problems. Keeping that in mind, you are given a linked list containing N elements, your task is to bring the last node to the front. If your list looks something like this HEAD->1->2->3->4->NULL you have to transform it to HEAD->4->3->2->1->NULL
+Remove Duplicate From The List
+
+You are given a sorted list which may or may not contain duplicate elements. Your task is to remove the duplicacy from the list. So basically if two 4's are present in the list then you have to modify the list such that only one 4 should be there. 
 
 Input Format
+
 The first line contains an integer 
-T, no of test cases. Then follows 
+T, number of test cases. Then follows 
 T test cases. Each test case consists of two lines. The first line contains 
 N, size of the list. The second line contains 
 N space-separated positive integers denoting elements of the list
 
 Output Format
-The output contains 
-T
- lines, each line containing the modified list.
+The output contains t lines, each line containing the modified list.
 
 Example
 Input
 2
-4
-3 4 5 6
-2
-1 2
+5
+1 2 3 3 4
+7
+4 4 5 6 6 7 8
 
 Output
-6 3 4 5
-2 1
+1 2 3 4
+4 5 6 7 8
