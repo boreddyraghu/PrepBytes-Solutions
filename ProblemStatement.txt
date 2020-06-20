@@ -1,26 +1,33 @@
-Remove Duplicate From The List
+Insert a Node
 
-You are given a sorted list which may or may not contain duplicate elements. Your task is to remove the duplicacy from the list. So basically if two 4's are present in the list then you have to modify the list such that only one 4 should be there. 
+Inserting an element in between the elements in an array requires you to shift the elements to the left but in Linked list it is just about modifying few links. Let's practice inserting a node in an array, but there is a rule : 
+
+You are given a sorted linked list and you have to insert a node in the list in a sorted manner. 
+
+For example - if the given list is HEAD->2->3->6->8->NULL  and you have to insert 4, you will insert it after 3 and your modified list will look something like this HEAD->2->3->4->6->8->NULL
 
 Input Format
-
 The first line contains an integer 
 T, number of test cases. Then follows 
-T test cases. Each test case consists of two lines. The first line contains 
+T test cases. Each test case consists of three lines. The first line contains 
 N, size of the list. The second line contains 
-N space-separated positive integers denoting elements of the list
+N space-separated positive integers denoting elements of the list. The third line contains an integer denoting the data value to be inserted.
 
 Output Format
-The output contains t lines, each line containing the modified list.
+The output contains 
+T
+ lines, each line containing the modified list.
 
 Example
 Input
 2
-5
-1 2 3 3 4
-7
-4 4 5 6 6 7 8
+4
+1 2 4 5
+3
+3
+1 1 1
+2
 
 Output
-1 2 3 4
-4 5 6 7 8
+1 2 3 4 5
+1 1 1 2

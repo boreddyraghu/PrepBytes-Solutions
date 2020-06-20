@@ -26,18 +26,36 @@ import java.util.*;
         tempNode.next = node;
       }
     }
-    void removeDuplicates()
+    void insertMissingNode(int k)
     {
-      Node currNode = head;
-      while(currNode != null && currNode.next != null)
+      Node node = new Node(k);
+      if(k <= head.data)
       {
-        if(currNode.data == currNode.next.data)
+        node.next = head;
+        head = node;
+      }
+      else
+      {
+        Node prevNode = null;
+        Node currNode = head;
+        while(currNode != null)
         {
-          currNode.next = currNode.next.next;
-          //currNode = currNode.next;
-        }
-        else
+          prevNode = currNode;
           currNode = currNode.next;
+          if(currNode != null)
+          {
+            if(prevNode.data <= node.data && node.data <= currNode.data)
+            {
+              node.next = prevNode.next;
+              prevNode.next = node;
+              break;
+            }
+          }
+        }
+        if(currNode == null)
+        {
+          prevNode.next = node;
+        }
       }
     }
     void printLinkedList()
@@ -60,8 +78,9 @@ import java.util.*;
 	      int n = sc.nextInt();
 	      for(int i = 0; i < n; ++i)
 	        main.insertNode(sc.nextInt());
-	       main.removeDuplicates();
-	       main.printLinkedList();
+	      int k = sc.nextInt();
+	      main.insertMissingNode(k);
+	      main.printLinkedList();
       }
     }
   }
